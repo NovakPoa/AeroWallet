@@ -4,6 +4,8 @@
 3. Click Load unpacked extension… to pop up a file-selection dialog.
 4. Navigate to the directory in which your extension files live, and select it (no nosso caso AeroWallet/chrome-extension).
 
+## Instruções originais abaixo 
+
 ## Website: https://www.MyEtherWallet.com
 ## Chrome Extension: https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm
 ## Download the Latest Release: https://github.com/kvhnuke/etherwallet/releases/latest
