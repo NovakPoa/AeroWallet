@@ -3425,6 +3425,15 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: true
     },
 
+
+    help: {
+      id: 3,
+      name: "NAV_Help",
+      url: "help",
+      mew: true,
+      cx: true
+    },
+
 /*
 
     sendTransaction: {
@@ -3476,13 +3485,7 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: false
     },
-    help: {
-      id: 8,
-      name: "NAV_Help",
-      url: "help",
-      mew: true,
-      cx: true
-    },
+
     bulkGenerate: {
       id: 9,
       name: "NAV_BulkGenerate",
