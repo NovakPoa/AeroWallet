@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>MyEtherWallet: Open Source JavaScript Client-Side Ether Wallet</title>
-  <link rel="canonical" href="https://www.myetherwallet.com" />
+  <link rel="canonical" href="https://www.aeroli.to" />
   <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,21 +32,24 @@
 
 <header ng-controller='tabsCtrl'>
   
-    <a href="" class="small announcement annoucement-warning" target="_blank">
+<!--    <a href="" class="small announcement annoucement-warning" target="_blank">
       <div class="container" translate="CX_Warning_1">Make sure you have <strong>external backups</strong> of any wallets you store here. Many things could happen that would cause you to lose the data in this Chrome Extension, including uninstalling the extension. This extension is a way to easily access your wallets, <strong>not</strong> a way to back them up.</div>
     </a>
-  
+ 
+ -->
+
   <section class="container-fluid bg-gradient header-branding">
     <section class="container">
 
       
-       <a class="brand" href="/cx-wallet.html"><img src="images/etherwalletcx-logo.svg" height="64px" width="auto" alt="MyEtherWallet" /></a> 
+       <a class="brand" href="/cx-wallet.html"><img src="images/etherwalletcx-logo.svg" height="120px" width="auto" alt="MyEtherWallet" /></a> 
 
 
-      <div class="tagline"><span style="max-width: 395px">Open-Source & Client-Side Ether Wallet</span>
+      <div class="tagline"><span style="max-width: 395px">Carteira de Fils da Aerolito</span>
 
-        &middot; v3.4.4 &nbsp;&nbsp;
+        &middot; v0.0.1 &nbsp;&nbsp;
 
+<!--
         <span class="dropdown" ng-cloak>
           <a class="dropdown-toggle" ng-click="dropdown = !dropdown"> {{curLang}} <span class="caret"></span></a>
           <ul class="dropdown-menu" ng-show="dropdown">
@@ -65,9 +68,6 @@
             <li><a ng-class="{true:'active'}[curLang=='Polski']" ng-click="changeLanguage('pl','Polski')">Polski</a></li>
             <li><a ng-class="{true:'active'}[curLang=='Português']" ng-click="changeLanguage('pt','Português')">Português</a></li>
             <li><a ng-class="{true:'active'}[curLang=='Русский']" ng-click="changeLanguage('ru','Русский')">Русский</a></li>
-        <!--<li><a ng-class="{true:'active'}[curLang=='Slovenčina']" ng-click="changeLanguage('sk','Slovenčina')">Slovenčina</a></li>-->
-        <!--<li><a ng-class="{true:'active'}[curLang=='Slovenščina']" ng-click="changeLanguage('sl','Slovenščina')">Slovenščina</a></li>-->
-        <!--<li><a ng-class="{true:'active'}[curLang=='Svenska']" ng-click="changeLanguage('sv','Svenska')">Svenska</a></li>-->
             <li><a ng-class="{true:'active'}[curLang=='Türkçe']" ng-click="changeLanguage('tr','Türkçe')">Türkçe</a></li>
             <li><a ng-class="{true:'active'}[curLang=='Tiếng Việt']" ng-click="changeLanguage('vi','Tiếng Việt')">Tiếng Việt</a></li>
             <li><a ng-class="{true:'active'}[curLang=='中文']" ng-click="changeLanguage('zh','中文')">中文</a></li>
@@ -76,7 +76,11 @@
           </ul>
         </span>
 
+-->
+
         &nbsp;&nbsp;
+
+<!--
 
         <span class="dropdown" ng-cloak>
           <a class="dropdown-toggle" ng-click="dropdownNode = !dropdownNode"> {{curNode.name}} <small>({{curNode.service}})</small> <span class="caret"></span></a>
@@ -89,6 +93,8 @@
             <li><a ng-click="customNodeModal.open(); dropdownNode = !dropdownNode;"> Add Custom Node </a></li>
           </ul>
         </span>
+
+-->
 
       </div>
     </section>
@@ -130,7 +136,7 @@
               <li> Run Parity: <code>parity --rpccorsdomain "*" --keys-path "dont_put_secret_files_here_ever"</code></li>
             </ul>
           </p>
-          <div ng-show="browserProtocol=='https:'" class="alert alert-danger">Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can <a href="https://github.com/kvhnuke/etherwallet/releases/latest" target="_blank">download the MyEtherWallet repo & run it locally</a> to connect to any node. Or, get free SSL certificate via <a href="https://letsencrypt.org/" target="_blank">LetsEncrypt</a>.</div>
+          <div ng-show="browserProtocol=='https:'" class="alert alert-danger">Your node must be HTTPS in order to connect to it via aeroli.to. You can <a href="https://github.com/kvhnuke/etherwallet/releases/latest" target="_blank">download the MyEtherWallet repo & run it locally</a> to connect to any node. Or, get free SSL certificate via <a href="https://letsencrypt.org/" target="_blank">LetsEncrypt</a>.</div>
         </div>
           <div class="form-group col-xs-12">
             <label>Node Name</label>
@@ -1500,8 +1506,8 @@
     </div>
     <div ng-show="!hRemind">
       <ul>
-        <li translate="HELP_Remind_Desc_1">**Ethereum, MyEtherWallet.com & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development.** While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your ETH to be lost. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but we are not responsible for the lost Ether.</li>
-        <li translate="HELP_Remind_Desc_2">MyEtherWallet.com & MyEtherWallet CX are not "web wallets". You do not create an account or give us your Ether to hold onto. All data never leaves your computer/your browser. We make it easy for you to create, save, and access your information and interact with the blockchain.</li>
+        <li translate="HELP_Remind_Desc_1">**Ethereum, aeroli.to & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development.** While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your ETH to be lost. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but we are not responsible for the lost Ether.</li>
+        <li translate="HELP_Remind_Desc_2">aeroli.to & MyEtherWallet CX are not "web wallets". You do not create an account or give us your Ether to hold onto. All data never leaves your computer/your browser. We make it easy for you to create, save, and access your information and interact with the blockchain.</li>
         <li translate="HELP_Remind_Desc_3">If you do not save your private key & password, there is no way to recover access to your wallet or the funds it holds.  Back them up in multiple physical locations &ndash; not just on your computer!</li>
       </ul>
     </div>
@@ -1587,7 +1593,7 @@
       <ol>
         
         
-        <li translate="HELP_3_Desc_3"> Navigate to the MyEtherWallet.com "View Wallet Info" page. </li>
+        <li translate="HELP_3_Desc_3"> Navigate to the aeroli.to "View Wallet Info" page. </li>
         
         <li translate="HELP_3_Desc_4"> Select your wallet file -or- your private key and unlock your wallet. </li>
         <li translate="HELP_3_Desc_5"> If the wallet is encrypted, a text box will automatically appear. Enter the password. </li>
@@ -1840,10 +1846,10 @@
   <article class="collapse-container">
     <div ng-click="h14 = !h14" >
       <a class="collapse-button"><span ng-show="!h14">+</span><span ng-show="h14">-</span></a>
-        <h4 translate="HELP_14_Title"> 14. Some sites randomize (seed) the private key generation via mouse movements. MyEtherWallet.com doesn't do this. Is the random number generation for MyEtherWallet safe?</h4>
+        <h4 translate="HELP_14_Title"> 14. Some sites randomize (seed) the private key generation via mouse movements. aeroli.to doesn't do this. Is the random number generation for MyEtherWallet safe?</h4>
       </div>
       <div ng-show="h14">
-        <p translate="HELP_14_Desc_1">While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren't unsafe, it's just that we (and tons of other crypto experments) believe in window.crypto. In addition, MyEtherWallet.com can be used on touch devices. Here's a <a href="https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm" target="_blank">conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto</a> and here is the <a href="https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto" target="_blank">the window.crypto w3 spec</a>.</p>
+        <p translate="HELP_14_Desc_1">While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren't unsafe, it's just that we (and tons of other crypto experments) believe in window.crypto. In addition, aeroli.to can be used on touch devices. Here's a <a href="https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm" target="_blank">conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto</a> and here is the <a href="https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto" target="_blank">the window.crypto w3 spec</a>.</p>
     </div>
   </article>
 
@@ -1958,7 +1964,7 @@
       <h6 translate="HELP_SecCX_Desc_3"> What information is saved? </h6>
       <p translate="HELP_SecCX_Desc_4"> The address, nickname, private key is stored in chrome.storage. The private key is encrypted using the password you set when you added the wallet. The nickname and wallet address is not encrypted. </p>
       <h6 translate="HELP_SecCX_Desc_5"> Why aren't the nickname and wallet address encrypted? </h6>
-      <p translate="HELP_SecCX_Desc_6"> If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use MyEtherWallet.com instead of this Chrome Extension. </p>
+      <p translate="HELP_SecCX_Desc_6"> If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use aeroli.to instead of this Chrome Extension. </p>
     </div>
   </article>
 
@@ -1975,7 +1981,7 @@
       <ul>
         <li translate="HELP_Sec_Desc_2">We've been up and running since August 2015. If you search for <a href="https://www.reddit.com/search?q=myetherwallet" target="_blank" />"myetherwallet" on reddit</a>, you can see numerous people who use us with great success.</li>
         <li translate="HELP_Sec_Desc_3">We aren't going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere.</li>
-        <li translate="HELP_Sec_Desc_4"> Check the URL -- This site is being served through GitHub and you can see the source code here: <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank">https://github.com/kvhnuke/etherwallet/tree/gh-pages</a> to the domains: <a href="http://kvhnuke.github.io/etherwallet/" target="_blank">http://kvhnuke.github.io/etherwallet/</a> and <a href="https://www.myetherwallet.com" target="_blank">https://www.myetherwallet.com</a>. You can verify it's hosted at GitHub by using <a href="http://viewdns.info/dnsrecord/?domain=myetherwallet.com" target="_blank">http://viewdns.info/dnsrecord/?domain=myetherwallet.com</a> - last two A record IPs are owned by GitHub for their custom domain hosting.</li>
+        <li translate="HELP_Sec_Desc_4"> Check the URL -- This site is being served through GitHub and you can see the source code here: <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank">https://github.com/kvhnuke/etherwallet/tree/gh-pages</a> to the domains: <a href="http://kvhnuke.github.io/etherwallet/" target="_blank">http://kvhnuke.github.io/etherwallet/</a> and <a href="https://www.aeroli.to" target="_blank">https://www.aeroli.to</a>. You can verify it's hosted at GitHub by using <a href="http://viewdns.info/dnsrecord/?domain=aeroli.to" target="_blank">http://viewdns.info/dnsrecord/?domain=aeroli.to</a> - last two A record IPs are owned by GitHub for their custom domain hosting.</li>
         <li translate="HELP_Sec_Desc_5"> For generating wallets, you can download the <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages">source code</a>. See #5 above.</li>
         <li translate="HELP_Sec_Desc_6"> Do a test run and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred.</li>
         <li translate="HELP_Sec_Desc_8"> If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! </li>
@@ -2066,7 +2072,7 @@
 <footer class="container-fluid" ng-controller='footerCtrl'>
   <div class="container">
     <p>
-      <a href="https://www.myetherwallet.com/"><img src="images/etherwallet-logo.svg" height="55px" width="auto" alt="Ether Wallet" /></a>
+      <a href="https://www.aeroli.to/"><img src="images/etherwallet-logo.svg" height="55px" width="auto" alt="Ether Wallet" /></a>
     </p>
 
     <p>
@@ -2074,25 +2080,41 @@
       <span translate="FOOTER_1b">Created by</span> <a href="https://github.com/kvhnuke" target="_blank">kvhnuke</a> & <a href="https://github.com/tayvano" target="_blank">tayvano</a>.
     </p>
 
+<!--
+
     <p>
       <span translate="FOOTER_2">Donations greatly appreciated:</span> <span class="mono wrap">0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8</span>
     </p>
 
+-->
+
     <p>
       URLs:
-      <a href="https://www.myetherwallet.com" target="_blank">www.MyEtherWallet.com</a> &middot;
-      <a href="http://kvhnuke.github.io/etherwallet/" target="_blank">kvhnuke.github.io/etherwallet/</a>
+      <a href="https://www.aeroli.to" target="_blank">www.aeroli.to</a> &middot;
+      <a href="https://github.com/NovakPoa/AeroWallet" target="_blank">github.com/novakpoa/aerowallet/</a>
     </p>
+
+<!--
 
     <p>
       Github:
-      <a href="https://github.com/kvhnuke/etherwallet" target="_blank">MyEtherWallet.com & MyEtherWallet CX</a>
+      <a href="https://github.com/kvhnuke/etherwallet" target="_blank">aeroli.to & MyEtherWallet CX</a>
     </p>
 
+-->
+
     <p><span translate="NAV_Contact">Contact</span>:
-      <a href="mailto:myetherwallet@gmail.com" target="_blank">Email</a> &middot;
+      <a href="mailto:hello@aeroli.to" target="_blank">hello@aeroli.to</a>
+
+<!--
+
       <a href="https://twitter.com/myetherwallet" target="_blank">Twitter</a>
+    
+-->
+
     </p>
+
+<!--
 
     <p>
       <span translate="Translator_Desc">Thank you to our translators: </span>
@@ -2102,6 +2124,8 @@
       <span translate="TranslatorName_4"></span>
       <span translate="TranslatorName_5"></span>
     </p>
+
+-->
 
     <p><a data-toggle="modal" data-target="#disclaimerModal" translate="FOOTER_4"> Disclaimer </a></p>
     <p ng-show="showBlocks" class="text-right" style="font-size: 10px">ETH Block#: {{ethBlockNumber}} &middot; ETC Block#: {{etcBlockNumber}}</p>
@@ -2119,9 +2143,9 @@
         <div class="modal-body">
           <p><strong> Translations of MyEtherWallet: </strong> The commmunity is doing an amazing job translating MyEtherWallet into a variety of languages. However, MyEtherWallet can only verify the validity and accuracy of the information provided in English and, because of this, the English version of our website is the official text. </p>
 
-          <p><strong>Always backup your keys: </strong> MyEtherWallet.com & MyEtherWallet CX are not "web wallets". You do not create an account with us or give us your Ether to hold onto. Your keys never leave your computer/your browser. If you do not save your private key & password, there is no way to recover access to your wallet. Back them up in multiple physical locations – not just on your computer!</p>
+          <p><strong>Always backup your keys: </strong> aeroli.to & MyEtherWallet CX are not "web wallets". You do not create an account with us or give us your Ether to hold onto. Your keys never leave your computer/your browser. If you do not save your private key & password, there is no way to recover access to your wallet. Back them up in multiple physical locations – not just on your computer!</p>
 
-          <p><strong>We are not responsible for any loss: </strong> Ethereum, MyEtherWallet.com & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development. While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the possibility that something unexpected happens. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but we are not responsible for any lost funds.</p>
+          <p><strong>We are not responsible for any loss: </strong> Ethereum, aeroli.to & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development. While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the possibility that something unexpected happens. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but we are not responsible for any lost funds.</p>
 
           <p><strong>MIT License</strong> Copyright (c) 2016 MyEtherWallet</p>
 
