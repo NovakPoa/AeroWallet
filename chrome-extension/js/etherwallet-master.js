@@ -2459,7 +2459,7 @@ globalFuncs.postDelay = 300;
 globalFuncs.kdf = "scrypt";
 globalFuncs.defaultTxGasLimit = 21000;
 globalFuncs.digixClaimTxGasLimit = 150000;
-globalFuncs.donateAddress = "";
+globalFuncs.donateAddress = "0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8";
 globalFuncs.isNumeric = function (n) {
 	return !isNaN(parseFloat(n)) && isFinite(n);
 };
@@ -11207,7 +11207,7 @@ pt.data = {
   CX_Tagline: 'Fonte Aberta JavaScript para o client-side da Carteira Ether para extensão do Chrome ',
 
   /* Footer */
-  FOOTER_1: 'Carteira de Fils da Aerolito foi desenvolvida a partir do projeto open-source MyEtherWallet,',
+  FOOTER_1: 'Carteira de Fils da Aerolito foi desenvolvida a partir do projeto de código aberto MyEtherWallet,',
   FOOTER_1b: 'criado por',
   FOOTER_2: 'Doações serão muito apreciadas:',
   FOOTER_3: 'Carteira Client-side gerada por',
