@@ -3425,7 +3425,7 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: true
     },
 
-
+/*
 
     sendTransaction: {
       id: 3,
@@ -3435,7 +3435,7 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: true
     },
 
-
+*/
 
     offlineTransaction: {
       id: 4,
@@ -3445,7 +3445,7 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: false
     },
 
-
+/*
 
     signMsg: {
       id: 5,
@@ -3455,9 +3455,9 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: true
     },
 
+*/
 
-
-
+/*
 
     contracts: {
       id: 6,
@@ -3467,7 +3467,7 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       cx: true
     },
 
-
+*/
 
     viewWalletInfo: {
       id: 7,
