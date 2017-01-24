@@ -3424,6 +3424,9 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: false,
       cx: true
     },
+
+
+
     sendTransaction: {
       id: 3,
       name: "NAV_SendEther",
@@ -3431,6 +3434,9 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
+
+
+
     offlineTransaction: {
       id: 4,
       name: "NAV_Offline",
@@ -3438,6 +3444,9 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: false
     },
+
+
+
     signMsg: {
       id: 5,
       name: "NAV_SignMsg",
@@ -3445,6 +3454,11 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
+
+
+
+
+
     contracts: {
       id: 6,
       name: "NAV_Contracts",
@@ -3452,6 +3466,9 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
+
+
+
     viewWalletInfo: {
       id: 7,
       name: "NAV_ViewWallet",
@@ -11183,21 +11200,21 @@ pt.data = {
   x_Cancel: 'Cancelar',
   x_CSV: 'Arquivo CSV (não criptografado)',
   x_Download: 'Download',
-  x_Json: 'Arquivo JSON (não criptografada)',
-  x_JsonDesc: 'Este é o descriptografado, formato JSON da sua chave privada. Isto significa que você não precisa da senha, mas qualquer um que encontrar o seu JSON pode acessar sua carteira & Éter sem a senha.',
-  x_Keystore: 'Arquivo de armazenamento de chaves (UTC / JSON · Recomendado · Criptografado · Formato Mist)',
+  x_Json: 'Arquivo .JSON (Não criptografado)',
+  x_JsonDesc: 'Este é um arquivo descriptografado, em formato .JSON da sua chave privada. Isto significa que você não precisará da sua senha, mas qualquer um que encontrar o seu arquivo .JSON pode acessar sua carteira sem a senha.',
+  x_Keystore: 'Arquivo de armazenamento de chaves (UTC / JSON · Recomendado · Criptografado)',
   x_Keystore2: 'Arquivo de armazenamento de chaves (UTC / JSON)',
-  x_KeystoreDesc: 'Este arquivo de armazenamento de chaves corresponde ao formato usado pela Mist para que você possa facilmente importá-lo no futuro. É recomendado que o arquivo seja transferido e feito seu backup.',
+  x_KeystoreDesc: 'Este arquivo de armazenamento de chaves corresponde ao formato usado pela Mist - principal carteira da plataforma Ethereum - para que você possa facilmente importá-lo no futuro. É recomendado que o arquivo seja extraído da carteira e que seja feito seu backup.',
   x_Mnemonic: 'Frase Mnemonic (MetaMask / Jaxx / ether.cards)',
   x_Password: 'Senha',
   x_Print: 'Imprimir Carteira de Papel',
   x_PrintDesc: 'Dica: Clique impressão e salve como PDF, mesmo se você não possui uma impressora!',
   x_PrintShort: 'Imprimir',
-  x_PrivKey: 'Chave Privada (não criptografada)',
+  x_PrivKey: 'Chave Privada (Não criptografado)',
   x_PrivKey2: 'Chave Privada',
-  x_PrivKeyDesc: 'Essa é a versão de texto não criptografada da sua chave privada, o que significa que nenhuma senha é necessária. Se alguém encontrar a sua chave privada sem criptografia, eles podem acessar sua carteira sem a senha. Por esta razão, as versões codificadas são tipicamente recomendadas.',
+  x_PrivKeyDesc: 'Este é um arquivo descriptografado, em formato de texto da sua chave privada. Isto significa que você não precisará da sua senha, mas qualquer um que encontrar o seu arquivo .TXT pode acessar sua carteira sem a senha.',
   x_Save: 'Salvar',
-  x_TXT: 'Arquivo TXT (não criptografado)',
+  x_TXT: 'Arquivo .TXT (Não criptografado)',
   x_Wallet: 'Carteira',
 
   /* Header */
@@ -11447,11 +11464,11 @@ pt.data = {
 
   /* Help - Nothing after this point has to be translated. If you feel like being extra helpful, go for it. */
   HELP_Warning: 'If you created a wallet -or- downloaded the repo before **Dec. 31st, 2015**, please check your wallets &amp; download a new version of the repo. Click for details.',
-  HELP_Desc: 'Do you see something missing? Have another question? [Get in touch with us](mailto:myetherwallet@gmail.com), and we will not only answer your question, we will update this page to be more useful to people in the future!',
-  HELP_Remind_Title: 'Some reminders',
-  HELP_Remind_Desc_1: '**Ethereum, MyEtherWallet.com & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development.** While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your ETH to be lost. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but **we are not responsible for the lost Ether**.',
-  HELP_Remind_Desc_2: 'MyEtherWallet.com & MyEtherWallet CX are not "web wallets". You do not create an account or give us your Ether to hold onto. All data never leaves your computer/your browser. We make it easy for you to create, save, and access your information and interact with the blockchain.',
-  HELP_Remind_Desc_3: 'If you do not save your private key & password, there is no way to recover access to your wallet or the funds it holds.  Back them up in multiple physical locations &ndash; not just on your computer!',
+  HELP_Desc: 'Tem alguma pergunta? Notou algo de errado? [Entre em contato conosco](mailto:carteira@aeroli.to) e nós responderemos às suas perguntas.',
+  HELP_Remind_Title: 'Alguns lembretes',
+  HELP_Remind_Desc_1: 'A Carteira de Fils da Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém **a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.**',
+  HELP_Remind_Desc_2: '**Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador.** Isto é, a Carteira de Fils da Aerolito não é uma carteira salva na nuvem. Nossa intenção é apenas facilitar o acesso e interação com a blockchain por meio desta interface.',
+  HELP_Remind_Desc_3: 'Se você perder sua chave privada ou senha, não há maneira de recuperar acesso à sua carteira e aos seus fundos. Faça um backup de sua chave privada em múltiplos locais físicos, não apenas no seu computador!',
 
   HELP_0_Title: '0) I\'m new. What do I do?',
   HELP_0_Desc_1: 'MyEtherWallet gives you the ability to generate new wallets so you can store your Ether yourself, not on an exchange. This process happens entirely on your computer, not our servers. Therefore, when you generate a new wallet, **you are responsible for safely backing it up**.',
@@ -11467,13 +11484,26 @@ pt.data = {
   HELP_1_Desc_4: 'Click "GENERATE".',
   HELP_1_Desc_5: 'Your wallet has now been generated.',
 
-  HELP_2a_Title: '2a) How do I save/backup my wallet?',
+  HELP_2a_Title: 'Como faço um backup da minha carteira?',
+  HELP_2a_Desc_1: 'Você sempre deve fazer um backup de sua carteira externamente, e em múltiplos locais físicos - como um pendrive USB e/ou um pedaço de papel.',
+  HELP_2a_Desc_2: 'Salve seu endereço/chave pública. Você pode manter para si, ou compartilhar com outros. Assim, outros poderão transferir fundos para você.',
+  HELP_2a_Desc_3: 'Salve versões da sua chave privada. Não compartilhe com ninguém. Sua chave privada é necessária para acessar sua carteira e transferir fundos dela. Há 3 tipos de chaves privadas:',
+  HELP_2a_Desc_4: 'Coloque seu endereço/chave pública, versões da chave privada, e a versão em PDF de sua carteira online em uma pasta. Salve esta pasta em um computador ou pendrive USB.',
+  HELP_2a_Desc_5: 'Imprima o PDF de sua carteira, se você tiver acesso à uma impressora. Você também pode escrever sua chave privada e endereço/chave pública em um pedaço de papel. Armazene em um lugar seguro, preferencialmente distante do seu computador e do pendrive USB.',
+  HELP_2a_Desc_6: 'Mantenha em mente que você deve se prevenir quanto à perda de sua carteira devido à falhas mecânicas do seu computador, pendrive ou mesmo o papel utilizado. O mesmo se aplica a potenciais perdas materiais, como furto e roubo, assim como acidentes naturais como enchentes e incêndios.',
+
+/*
+
+  HELP_2a_Title: 'Como faço um backup da minha carteira?',
   HELP_2a_Desc_1: 'You should always back up your wallet externally and in multiple physical locations - like on a USB drive and/or a piece of paper.',
   HELP_2a_Desc_2: 'Save the address. You can keep it to yourself or share it with others. That way, others can transfer ether to you.',
   HELP_2a_Desc_3: 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys:',
   HELP_2a_Desc_4: 'Place your address, versions of the private key, and the PDF version of your paper wallet in a folder. Save this on your computer and a USB drive.',
   HELP_2a_Desc_5: 'Print the wallet if you have a printer. Otherwise, write down your private key and address on a piece of paper. Store this as a secure location, separate from your computer and the USB drive.',
   HELP_2a_Desc_6: 'Keep in mind, you must prevent loss of the keys and password due to loss or failure of you hard drive failure, or USB drive, or piece of paper. You also must keep in mind physical loss / damage of an entire area (think fire or flood).',
+
+*/
+
 
   HELP_2b_Title: '2b) How do I safely / offline / cold storage with MyEtherWallet?',
   HELP_2b_Desc_1: 'Go to [https://github.com/kvhnuke/etherwallet/releases/latest](https://github.com/kvhnuke/etherwallet/releases/latest).',
@@ -11647,13 +11677,23 @@ pt.data = {
   HELP_21_Desc_7: '[If you want something a bit more technical:](http://security.stackexchange.com/questions/25375/why-not-use-larger-cipher-keys/25392#25392) *These numbers have nothing to do with the technology of the devices; they are the maximums that thermodynamics will allow. And they strongly imply that brute-force attacks against 256-bit keys will be infeasible until computers are built from something other than matter and occupy something other than space.',
   HELP_21_Desc_8: 'Of course, this all assumes that keys are generated in a truly random way & with sufficient entropy. The keys generated here meet that criteria, as do Jaxx and Mist/geth. The Ethereum wallets are all pretty good. Keys generated by brainwallets do not, as a person\'s brain is not capable of creating a truly random seed. There have been a number of other issues regarding lack of entropy or seeds not being generated in a truly random way in Bitcoin-land, but that\'s a separate issue that can wait for another day.',
 
-  HELP_SecCX_Title: 'Security - MyEtherWallet CX ',
-  HELP_SecCX_Desc_1: 'Where is this extension saving my information?',
+  HELP_SecCX_Title: 'Informações de segurança',
+  HELP_SecCX_Desc_1: 'Onde esta extensão do Chrome está salvando minhas informações?',
+  HELP_SecCX_Desc_2: 'As informações que você armazena nesta extensão estão salvas via [chrome.storage](http://chrome.storage/) - o mesmo local onde o Google Chrome salva suas senhas de maneira segura.',
+  HELP_SecCX_Desc_3: 'Quais informações são salvas?',
+  HELP_SecCX_Desc_4: 'O endereço/chave pública, apelido da carteira e a chave privada são armazenadas no local citado. Sua chave privada é criptografada utilizando a senha definida pelo usuário. O apelido e endereço/chave pública da carteira não são criptografados.',
+  HELP_SecCX_Desc_5: 'Porque o apelido e endereço da carteira não são criptografados?',
+  HELP_SecCX_Desc_6: 'Se fossem, você precisaria da sua senha toda vez que quisesse checar seu saldo ou o apelido de suas contas. Qualquer interação com a blockchain e transação de fundos a partir de sua carteira requerem sua senha.',
+
+/*
+  HELP_SecCX_Title: 'Informações de segurança',
+  HELP_SecCX_Desc_1: 'Onde esta extensão do Chrome está salvando minhas informações?',
   HELP_SecCX_Desc_2: 'The information you store in this Chrome Extension is saved via [chrome.storage](http://chrome.storage/). - this is the same place your passwords are saved when you save your password in Chrome.',
   HELP_SecCX_Desc_3: 'What information is saved? ',
   HELP_SecCX_Desc_4: 'The address, nickname, private key is stored in chrome.storage. The private key is encrypted using the password you set when you added the wallet. The nickname and wallet address is not encrypted.',
   HELP_SecCX_Desc_5: 'Why aren\'t the nickname and wallet address encrypted? ',
   HELP_SecCX_Desc_6: 'If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use MyEtherWallet.com instead of this Chrome Extension.',
+  */
 
   HELP_Sec_Title: 'Security',
   HELP_Sec_Desc_1: 'If one of your first questions is "Why should I trust these people?", that is a good thing. Hopefully the following will help ease your fears. ',
