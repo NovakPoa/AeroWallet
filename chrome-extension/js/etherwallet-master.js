@@ -12103,7 +12103,7 @@ var translate = function translate($translateProvider) {
   $translateProvider.translations(tr.code, translate.marked(tr.data));
   $translateProvider.translations(vi.code, translate.marked(vi.data));
   $translateProvider.translations(zh.code, translate.marked(zh.data));
-  $translateProvider.preferredLanguage('en');
+  $translateProvider.preferredLanguage('pt');
   $translateProvider.useSanitizeValueStrategy(null);
 };
 
@@ -12115,7 +12115,10 @@ translate.marked = function (data) {
 };
 module.exports = translate;
 
-},{"./de":66,"./el":67,"./en":68,"./es":69,"./fi":70,"./fr":71,"./hu":72,"./id":73,"./it":74,"./ja":75,"./nl":76,"./no":77,"./pl":78,"./pt":79,"./ru":80,"./tr":81,"./vi":83,"./zh":84}],83:[function(require,module,exports){
+},{"./de":66,"./el":67,"./en":79,"./es":69,"./fi":70,"./fr":71,"./hu":72,"./id":73,"./it":74,"./ja":75,"./nl":76,"./no":77,"./pl":78,"./pt":79,"./ru":80,"./tr":81,"./vi":83,"./zh":84}],83:[function(require,module,exports){
+
+// },{"./de":66,"./el":67,"./en":68,"./es":69,"./fi":70,"./fr":71,"./hu":72,"./id":73,"./it":74,"./ja":75,"./nl":76,"./no":77,"./pl":78,"./pt":79,"./ru":80,"./tr":81,"./vi":83,"./zh":84}],83:[function(require,module,exports){
+
 // Vietnamese
 'use strict';
 
