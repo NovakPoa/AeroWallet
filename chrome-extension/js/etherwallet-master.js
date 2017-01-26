@@ -3424,18 +3424,6 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: false,
       cx: true
     },
-
-
-    help: {
-      id: 3,
-      name: "NAV_Help",
-      url: "help",
-      mew: true,
-      cx: true
-    },
-
-/*
-
     sendTransaction: {
       id: 3,
       name: "NAV_SendEther",
@@ -3443,15 +3431,19 @@ var globalService = function globalService($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
-
-*/
-
     offlineTransaction: {
       id: 4,
       name: "NAV_Offline",
       url: "offline-transaction",
       mew: true,
       cx: false
+    },
+    help: {
+      id: 5,
+      name: "NAV_Help",
+      url: "help",
+      mew: true,
+      cx: true
     },
 
 /*
