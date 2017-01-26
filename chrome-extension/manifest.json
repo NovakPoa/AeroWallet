@@ -1,8 +1,8 @@
 {
-  "name": "AeroWallet",
-  "version": "0.0.1",
+  "name": "Carteira Aerolito",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "description": "AeroWallet Chrome Extension",
+  "description": "Carteira de criptomoedas da Aerolito, utilizando a blockchain da Ethereum.",
   "homepage_url": "https://www.aeroli.to/",
   "icons": {
     "16": "images/icons/icon16.png",
@@ -12,7 +12,7 @@
   "options_page": "cx-wallet.html",
   "browser_action": {
     "default_icon": "images/icons/icon19.png",
-    "default_title": "AeroWallet",
+    "default_title": "Carteira Aerolito",
     "default_popup": "browser_action/browser_action.html"
   },
   "permissions": [
