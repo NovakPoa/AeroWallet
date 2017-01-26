@@ -218,10 +218,11 @@
           <span class="mono small">{{twallet.addr}}</span>
         </td>
         <td class="chrome-tokens">
-          <strong class="text-success">{{twallet.balance }} ETH</strong>
-          <br />
           <strong class="text-success ng-binding" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
           <br />
+          <strong class="text-success">{{twallet.balance }} ETH</strong>
+          <br />
+
 
 <!--
 
