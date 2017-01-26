@@ -47,7 +47,7 @@
 
       <div class="tagline"><span style="max-width: 395px">Carteira de Fils da Aerolito</span>
 
-        &middot; v0.0.4 &nbsp;&nbsp;
+        &middot; v0.0.5 &nbsp;&nbsp;
 
 <!--
         <span class="dropdown" ng-cloak>
@@ -220,9 +220,15 @@
         <td class="chrome-tokens">
           <strong class="text-success">{{twallet.balance }} ETH</strong>
           <br />
-          <span class="small" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
+          <strong class="text-success ng-binding" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
           <br />
+
+<!--
+
           <span ng-show="ajaxReq.type=='ETH'" class="small"><strong>{{twallet.btc }}</strong>&nbsp;BTC &nbsp;&nbsp; $ <strong>{{twallet.usd }}</strong>&nbsp;USD &nbsp;&nbsp; € <strong>{{twallet.eur }}</strong>&nbsp;EUR </small>
+
+-->
+
         </td>
         <td class="text-center">
           <a class="mainWalletEdit" ng-click="editMWallet($index,'wallet')"><img src="images/icon-edit.svg" title="Edit" /></a>
@@ -1635,11 +1641,15 @@
         <li translate="HELP_2a_Desc_2"> Save the address. You can keep it to yourself or share it with others. That way, others can transfer ETH to you. </li>
         <li translate="HELP_2a_Desc_3"> Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys: </li>
 
+<!--
+
         <ul>
           <li><strong translate="x_Keystore">Keystore/JSON File (Recommended · Encrypted · Mist/Geth Format):</strong> <span translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Mist & Geth so you can easily import it in the future. It is the recommended file to download and back up.</span></li>
           <li><strong translate="x_Json">JSON File (unencrypted):</strong> <span translate="x_JsonDesc">This is the unencrypted, JSON format of your private key. This means you do not need the password but anyone who finds your JSON can access your wallet & Ether without the password.</span></li>
           <li><strong translate="x_PrivKey">Private Key (unencrypted):</strong> <span translate="x_PrivKeyDesc">This is the unencrypted text version of your private key, meaning no password is necessary. If someone were to find your unencrypted private key, they could access your wallet without a password. For this reason, encrypted versions are typically recommended.</span></li>
         </ul>
+
+-->
 
         <li translate="HELP_2a_Desc_4"> Place your address, versions of the private key, and the PDF version of your paper wallet in a folder. Save this on your computer and a USB drive.</li>
         <li translate="HELP_2a_Desc_5"> Print the wallet if you have a printer. Otherwise, write down your private and address on a piece of paper. Store this as a secure location, separate from your computer and the USB drive.</li>

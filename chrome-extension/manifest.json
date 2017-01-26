@@ -1,6 +1,6 @@
 {
   "name": "Carteira Aerolito",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "Carteira de criptomoedas da Aerolito, utilizando a blockchain da Ethereum.",
   "homepage_url": "https://www.aeroli.to/",
