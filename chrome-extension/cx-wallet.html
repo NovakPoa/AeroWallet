@@ -190,9 +190,11 @@
     <!-- My Wallet Page -->
 <article class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.myWallet.id" ng-controller='myWalletsCtrl'  ng-cloak>
 
+<!--
 
   <h2 translate="NAV_YourWallets"> Your Wallets </h2>
 
+-->
 
   <!-- Your Wallet Table -->
   <table class="table table-striped" id="tblwalletsmain">
@@ -238,6 +240,9 @@
 
 
   <!-- Watch Only Account Table -->
+
+<!--
+
   <section id="secWatchOnlyMain">
     <h2 translate="MYWAL_WatchOnly"> Your Watch-Only Accounts </h2>
     <table class="table table-striped" id="tblWatchOnlyMain">
@@ -272,6 +277,9 @@
       </tbody>
     </table>
   </section>
+
+-->
+
   <!-- / Watch Only Account Table -->
 
 
@@ -496,7 +504,12 @@
 
 
     <section class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.addWallet.id" ng-controller='addWalletCtrl'  ng-cloak>
+
+<!--
+
   <h2 translate="NAV_AddWallet"> Add Wallet </h2>
+
+-->
 
   <section class="row" id="walletselection">
 
@@ -520,18 +533,29 @@
           <span translate="ADD_Radio_3">Paste/Type Your Private Key</span>
         </label>
       </div>
+
+<!--
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="pastemnemonic">
           <span translate="ADD_Radio_5">Paste/Type Your Mnemonic</span>
         </label>
       </div>
+
+-->
+
+<!--
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="watchonlyaccount">
           <span translate="ADD_Radio_4">Add an Account to Watch</span>
         </label>
       </div>
+
+-->
+
     </article>
 
     <article class="col-md-4 col-sm-6">
