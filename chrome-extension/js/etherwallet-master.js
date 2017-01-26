@@ -1944,8 +1944,6 @@ Account Address: <\/div>\n \
       {{token.getSymbol()}} <\/td>\n \
       <\/tr>\n \
       <\/table>\n \
-      <a class=\"btn btn-default btn-sm\" ng-click=\"tokenVisibility=\'shown\'\" ng-show=\"tokenVisibility==\'hidden\'\"> Show All Tokens <\/a>\n \
-      <a class=\"btn btn-default btn-sm\" ng-click=\"tokenVisibility=\'hidden\'\" ng-show=\"tokenVisibility==\'shown\'\">  Hide Tokens <\/a>\n \
       <a class=\"btn btn-default btn-sm\" ng-click=\"customTokenField = !customTokenField\"> <span translate=\"SEND_custom\"> Add Custom Token <\/span> <\/a>\n \
       <div class=\"custom-token-fields\" ng-show=\"customTokenField\">\n \
       <div class=\"form-group\">\n \
