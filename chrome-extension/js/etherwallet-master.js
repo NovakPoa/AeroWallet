@@ -2394,7 +2394,7 @@ globalFuncs.errorMsgs = ["Please enter valid amount.", "Your password must be at
 "Invalid nonce. ", "Invalid signed transaction. ", "A wallet with this nickname already exists. ", "Wallet not found. ", "Whoops. It doesnt look like a proposal with this ID exists yet or there is an error reading this proposal. ", // 15
 "A wallet with this address already exists in storage. Please check your wallets page. ", "You need to have at least 0.01 ETH in your account to cover the cost of gas. Please add some ETH and try again. ", "All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.", "Invalid symbol", "Not a valid ERC-20 token", "Could not estimate gas. There are not enough funds in the account, or the receiving contract address would throw an error. Feel free to manually set the gas and proceed. The error message upon sending may be more informative.", "Please enter valid node name", "Enter valid url, if you are on https your url must be https", "Please enter valid port", "Please enter valid chain ID", "Please enter valid ABI"];
 // These are translated in the translation files
-globalFuncs.successMsgs = ["Valid address", "Wallet successfully decrypted", "Transaction submitted. TX ID: ", "Your wallet was successfully added: ", "File Selected: "];
+globalFuncs.successMsgs = ["Valid address", "Wallet successfully decrypted", "Transaction submitted. TX ID: ", "Sua carteira foi adicionada com sucesso: ", "File Selected: "];
 // These are translated in the translation files
 globalFuncs.gethErrors = {
 	"Invalid sender": "GETH_InvalidSender",
@@ -11173,7 +11173,7 @@ pt.data = {
   /* Navigation*/
   NAV_YourWallets: 'Suas Carteiras',
   NAV_AddWallet: 'Adicionar Carteira',
-  NAV_GenerateWallet: 'Gerar Carteira',
+  NAV_GenerateWallet: 'Gerar carteira',
   NAV_BulkGenerate: 'Gerar Bulk',
   NAV_SendEther: 'Enviar Ether & Tokens',
   NAV_SendTokens: 'Enviar Tokens',
@@ -11241,14 +11241,14 @@ pt.data = {
 
   /* Add Wallet */
   ADD_Label_1: 'O que você gostaria de fazer?',
-  ADD_Radio_1: 'Gerar Nova Carteira',
+  ADD_Radio_1: 'Gerar nova carteira',
   ADD_Radio_2: 'Selecione seu arquivo da Carteira (Keystore / JSON)',
   ADD_Radio_2_alt: 'Selecione seu arquivo da Carteira: ',
   ADD_Radio_2_short: 'SELECIONE O ARQUIVO DA CARTEIRA...',
   ADD_Radio_3: 'Cole/Digite sua Chave Privada ',
   ADD_Radio_4: 'Adicionar uma conta para ver',
   ADD_Radio_5: 'Cole/Digite sua Mnemonic',
-  ADD_Label_2: 'Crie um Apelido:',
+  ADD_Label_2: 'Crie um nome:',
   ADD_Label_3: 'Sua carteira é criptografada. Por favor, insira a senha: ',
   ADD_Label_4: 'Adicionar uma conta para ver',
   ADD_Warning_1: 'Você pode adicionar qualquer conta para "ver" na tab de carteiras sem fazer o upload da chave privada. Isso significa que você ** não **  tem acesso a essa carteira, nem pode transferir Ether a partir dela.',
@@ -11347,8 +11347,8 @@ pt.data = {
   DEP_interface: 'Interface Gerada',
 
   /* My Wallet */
-  MYWAL_Nick: 'Apelido da Carteira',
-  MYWAL_Address: 'Endereço da Carteira',
+  MYWAL_Nick: 'Nome da carteira',
+  MYWAL_Address: 'Endereço da carteira',
   MYWAL_Bal: 'Saldo',
   MYWAL_Edit: 'Editar',
   MYWAL_View: 'Ver',
@@ -11411,7 +11411,7 @@ pt.data = {
   SUCCESS_1: 'Valid address',
   SUCCESS_2: 'Wallet successfully decrypted',
   SUCCESS_3: 'Transaction submitted. TX ID: ',
-  SUCCESS_4: 'Your wallet was successfully added: ',
+  SUCCESS_4: 'Sua carteira foi criada com sucesso: ',
   SUCCESS_5: 'File Selected: ',
 
   /* Geth Error Messages */
