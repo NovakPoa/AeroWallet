@@ -7094,7 +7094,7 @@ en.data = {
   ADD_Ledger_scan: 'Connect to Ledger Nano S',
 
   /* Chrome Extension */
-  CX_error_1: 'You don\'t have any wallets saved. Click ["Add Wallet"](/cx-wallet.html#add-wallet) to add one!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Error Messages */
@@ -7600,7 +7600,7 @@ fi.data = (_fi$data = {
   ADD_Ledger_scan: 'Connect to Ledger Nano S',
 
   /* Chrome Extension */
-  CX_error_1: 'You don\'t have any wallets saved. Click ["Add Wallet"](/cx-wallet.html#add-wallet) to add one!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Geth Error Messages */
@@ -11382,7 +11382,7 @@ pt.data = {
   ADD_Ledger_scan: 'Conectar-se a Ledger Wallet',
 
   /* Chrome Extension */
-  CX_error_1: 'You don\'t have any wallets saved. Click ["Add Wallet"](/cx-wallet.html#add-wallet) to add one!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Error Messages */
