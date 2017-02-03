@@ -11217,7 +11217,7 @@ pt.data = {
   CX_Tagline: 'Fonte Aberta JavaScript para o client-side da Carteira Ether para extensão do Chrome ',
 
   /* Footer */
-  FOOTER_1: 'Carteira Aerolito foi desenvolvida a partir do projeto de código aberto MyEtherWallet,',
+  FOOTER_1: 'Carteira de Fils da Aerolito foi desenvolvida a partir do projeto de código aberto MyEtherWallet,',
   FOOTER_1b: 'criado por',
   FOOTER_2: 'Doações serão muito apreciadas:',
   FOOTER_3: 'Carteira Client-side gerada por',
@@ -11459,8 +11459,8 @@ pt.data = {
   HELP_Warning: 'If you created a wallet -or- downloaded the repo before **Dec. 31st, 2015**, please check your wallets &amp; download a new version of the repo. Click for details.',
   HELP_Desc: 'Tem alguma pergunta? Notou algo de errado? [Entre em contato conosco](mailto:carteira@aeroli.to) e nós responderemos às suas perguntas.',
   HELP_Remind_Title: 'Alguns lembretes',
-  HELP_Remind_Desc_1: 'A Carteira Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém **a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.**',
-  HELP_Remind_Desc_2: '**Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador.** Isto é, a Carteira Aerolito não é uma carteira salva na nuvem. Nossa intenção é apenas facilitar o acesso e interação com a blockchain por meio desta interface.',
+  HELP_Remind_Desc_1: 'A Carteira de Fils da Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém **a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.**',
+  HELP_Remind_Desc_2: '**Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador.** Isto é, a Carteira de Fils da Aerolito não é uma carteira salva na nuvem. Nossa intenção é apenas facilitar o acesso e interação com a blockchain por meio desta interface.',
   HELP_Remind_Desc_3: 'Se você perder sua chave privada ou senha, não há maneira de recuperar acesso à sua carteira e aos seus fundos. Faça um backup de sua chave privada em múltiplos locais físicos, não apenas no seu computador!',
 
   HELP_0_Title: '0) I\'m new. What do I do?',
