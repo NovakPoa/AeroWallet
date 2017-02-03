@@ -47,7 +47,7 @@
 
       <div class="tagline"><span style="max-width: 395px">Carteira de Fils da Aerolito</span>
 
-        &middot; v0.0.5 &nbsp;&nbsp;
+        &middot; v0.0.6 &nbsp;&nbsp;
 
 <!--
         <span class="dropdown" ng-cloak>
@@ -218,11 +218,10 @@
           <span class="mono small">{{twallet.addr}}</span>
         </td>
         <td class="chrome-tokens">
-          <strong class="text-success ng-binding" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
-          <br />
           <strong class="text-success">{{twallet.balance }} ETH</strong>
           <br />
-
+          <strong class="text-success ng-binding" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
+          <br />
 
 <!--
 
