@@ -1944,8 +1944,6 @@ Account Address: <\/div>\n \
       {{token.getSymbol()}} <\/td>\n \
       <\/tr>\n \
       <\/table>\n \
-      <a class=\"btn btn-default btn-sm\" ng-click=\"tokenVisibility=\'shown\'\" ng-show=\"tokenVisibility==\'hidden\'\"> Show All Tokens <\/a>\n \
-      <a class=\"btn btn-default btn-sm\" ng-click=\"tokenVisibility=\'hidden\'\" ng-show=\"tokenVisibility==\'shown\'\">  Hide Tokens <\/a>\n \
       <a class=\"btn btn-default btn-sm\" ng-click=\"customTokenField = !customTokenField\"> <span translate=\"SEND_custom\"> Add Custom Token <\/span> <\/a>\n \
       <div class=\"custom-token-fields\" ng-show=\"customTokenField\">\n \
       <div class=\"form-group\">\n \
@@ -11219,7 +11217,7 @@ pt.data = {
   CX_Tagline: 'Fonte Aberta JavaScript para o client-side da Carteira Ether para extensão do Chrome ',
 
   /* Footer */
-  FOOTER_1: 'Carteira de Fils da Aerolito foi desenvolvida a partir do projeto de código aberto MyEtherWallet,',
+  FOOTER_1: 'Carteira Aerolito foi desenvolvida a partir do projeto de código aberto MyEtherWallet,',
   FOOTER_1b: 'criado por',
   FOOTER_2: 'Doações serão muito apreciadas:',
   FOOTER_3: 'Carteira Client-side gerada por',
@@ -11230,7 +11228,7 @@ pt.data = {
   sidebar_AccountAddr: 'Endereço da Conta: ',
   sidebar_AccountBal: 'Saldo da Conta: ',
   sidebar_TokenBal: 'Saldo de Tokens: ',
-  sidebar_Equiv: 'Valor Equivalente: ',
+  sidebar_Equiv: 'Valor Equivalente ao Ether: ',
   sidebar_TransHistory: 'Histórico de Transações: ',
   sidebar_donation: 'MyEtherWallet é grátis, um serviço de fonte aberta dedicado a sua privacidade e segurança. Quanto mais doações nós recebermos, mais podemos gastar criando novidade, ouvindo seu feedback, e entregando o que você deseja. Somos apenas duas pessoas tentando mudar o mundo. Ajude-nos?',
   sidebar_donate: 'De',
@@ -11461,8 +11459,8 @@ pt.data = {
   HELP_Warning: 'If you created a wallet -or- downloaded the repo before **Dec. 31st, 2015**, please check your wallets &amp; download a new version of the repo. Click for details.',
   HELP_Desc: 'Tem alguma pergunta? Notou algo de errado? [Entre em contato conosco](mailto:carteira@aeroli.to) e nós responderemos às suas perguntas.',
   HELP_Remind_Title: 'Alguns lembretes',
-  HELP_Remind_Desc_1: 'A Carteira de Fils da Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém **a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.**',
-  HELP_Remind_Desc_2: '**Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador.** Isto é, a Carteira de Fils da Aerolito não é uma carteira salva na nuvem. Nossa intenção é apenas facilitar o acesso e interação com a blockchain por meio desta interface.',
+  HELP_Remind_Desc_1: 'A Carteira Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém **a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.**',
+  HELP_Remind_Desc_2: '**Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador.** Isto é, a Carteira Aerolito não é uma carteira salva na nuvem. Nossa intenção é apenas facilitar o acesso e interação com a blockchain por meio desta interface.',
   HELP_Remind_Desc_3: 'Se você perder sua chave privada ou senha, não há maneira de recuperar acesso à sua carteira e aos seus fundos. Faça um backup de sua chave privada em múltiplos locais físicos, não apenas no seu computador!',
 
   HELP_0_Title: '0) I\'m new. What do I do?',
@@ -11480,11 +11478,11 @@ pt.data = {
   HELP_1_Desc_5: 'Your wallet has now been generated.',
 
   HELP_2a_Title: 'Como faço um backup da minha carteira?',
-  HELP_2a_Desc_1: 'Você sempre deve fazer um backup de sua carteira externamente, e em múltiplos locais físicos - como um pendrive USB e/ou um pedaço de papel.',
-  HELP_2a_Desc_2: 'Salve seu endereço/chave pública. Você pode manter para si, ou compartilhar com outros. Assim, outros poderão transferir fundos para você.',
-  HELP_2a_Desc_3: 'Salve versões da sua chave privada. Não compartilhe com ninguém. Sua chave privada é necessária para acessar sua carteira e transferir fundos dela. Há 3 tipos de chaves privadas:',
-  HELP_2a_Desc_4: 'Coloque seu endereço/chave pública, versões da chave privada, e a versão em PDF de sua carteira online em uma pasta. Salve esta pasta em um computador ou pendrive USB.',
-  HELP_2a_Desc_5: 'Imprima o PDF de sua carteira, se você tiver acesso à uma impressora. Você também pode escrever sua chave privada e endereço/chave pública em um pedaço de papel. Armazene em um lugar seguro, preferencialmente distante do seu computador e do pendrive USB.',
+  HELP_2a_Desc_1: 'Você sempre deve fazer um backup de sua carteira externamente, e em múltiplos locais físicos - como um pendrive USB e/ou um pedaço de papel. Você pode compartilhar seu endereço/chave pública, possibilitando que outros transacionem com você. Já sua chave privada permite acesso total à sua carteira e fundos, portanto você deve salvá-la mas não compartilhá-la.',
+  HELP_2a_Desc_2: 'Vá até a aba **Minhas Carteiras**.',
+  HELP_2a_Desc_3: 'Acesse mais informações da carteira que você deseja fazer o backup.',
+  HELP_2a_Desc_4: '**Copie seu endereço/chave pública e sua chave privada em algum local seguro**, prefencialmente em um pendrive USB.',
+  HELP_2a_Desc_5: 'Se desejar, imprima as informações de sua carteira ou as salve em PDF. Você também pode escrever seu endereço/chave pública e chave privada em um pedaço de papel. Armazene em um lugar seguro, preferencialmente distante do seu computador.',
   HELP_2a_Desc_6: 'Mantenha em mente que você deve se prevenir quanto à perda de sua carteira devido à falhas mecânicas do seu computador, pendrive ou mesmo o papel utilizado. O mesmo se aplica a potenciais perdas materiais, como furto e roubo, assim como acidentes naturais como enchentes e incêndios.',
 
 /*

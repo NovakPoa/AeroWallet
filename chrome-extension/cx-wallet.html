@@ -2,7 +2,7 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>Carteira da Aerolito</title>
+  <title>Carteira Aerolito</title>
   <link rel="canonical" href="https://www.aeroli.to" />
   <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
   <meta name="author" content="">
@@ -45,9 +45,9 @@
        <a class="brand" href="/cx-wallet.html"><img src="images/etherwalletcx-logo.svg" height="120px" width="auto" alt="MyEtherWallet" /></a> 
 
 
-      <div class="tagline"><span style="max-width: 395px">Carteira de Fils da Aerolito</span>
+      <div class="tagline"><span style="max-width: 395px">Carteira Aerolito</span>
 
-        &middot; v0.0.3 &nbsp;&nbsp;
+        &middot; v0.0.7 &nbsp;&nbsp;
 
 <!--
         <span class="dropdown" ng-cloak>
@@ -112,7 +112,13 @@
         
       </nav>
     </div>
+
+<!--
+
     <a ng-show="showRightArrow" class="nav-arrow-right" ng-click="scrollRight(100);" ng-mouseover="scrollHoverIn(false,2);" ng-mouseleave="scrollHoverOut()">&#187;</a>
+
+-->
+
   </section>
 
 
@@ -190,9 +196,11 @@
     <!-- My Wallet Page -->
 <article class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.myWallet.id" ng-controller='myWalletsCtrl'  ng-cloak>
 
+<!--
 
   <h2 translate="NAV_YourWallets"> Your Wallets </h2>
 
+-->
 
   <!-- Your Wallet Table -->
   <table class="table table-striped" id="tblwalletsmain">
@@ -218,9 +226,15 @@
         <td class="chrome-tokens">
           <strong class="text-success">{{twallet.balance }} ETH</strong>
           <br />
-          <span class="small" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
+          <strong class="text-success ng-binding" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'"><strong>{{token.getBalance()}} </strong> {{token.getSymbol()}} &nbsp;&nbsp; </span>
           <br />
+
+<!--
+
           <span ng-show="ajaxReq.type=='ETH'" class="small"><strong>{{twallet.btc }}</strong>&nbsp;BTC &nbsp;&nbsp; $ <strong>{{twallet.usd }}</strong>&nbsp;USD &nbsp;&nbsp; € <strong>{{twallet.eur }}</strong>&nbsp;EUR </small>
+
+-->
+
         </td>
         <td class="text-center">
           <a class="mainWalletEdit" ng-click="editMWallet($index,'wallet')"><img src="images/icon-edit.svg" title="Edit" /></a>
@@ -238,6 +252,9 @@
 
 
   <!-- Watch Only Account Table -->
+
+<!--
+
   <section id="secWatchOnlyMain">
     <h2 translate="MYWAL_WatchOnly"> Your Watch-Only Accounts </h2>
     <table class="table table-striped" id="tblWatchOnlyMain">
@@ -272,6 +289,9 @@
       </tbody>
     </table>
   </section>
+
+-->
+
   <!-- / Watch Only Account Table -->
 
 
@@ -285,9 +305,14 @@
     <div class="col-sm-4 text-right" style="margin-top: 16px;">
       <a class="btn btn-warning" ng-click="resetWallet()" translate="MYWAL_Hide"> Hide Wallet Info </a>
     </div>
+
+<!--
+
     <div class="col-xs-12">
       <div class="alert alert-danger" translate="GEN_Warning">**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the help page for instructions.</div>
     </div>
+
+-->
 
     <div class="col-sm-6">
       <div class="row">
@@ -312,6 +337,9 @@
         <textarea class="form-control" type="text" readonly="readonly">{{wallet.getPrivateKeyString()}}</textarea>
       </div>
       <div class="row">
+
+<!--
+
         <div class="form-group col-sm-6">
           <h4 translate="x_Address">Your Address:</h4>
           <div qr-code="{{wallet.getAddressString()}}" watch-var="wallet" width="100%"></div>
@@ -320,6 +348,9 @@
           <h4 translate="x_PrivKey">Private Key (unencrypted):</h4>
           <div qr-code="{{wallet.getPrivateKeyString()}}" watch-var="wallet" width="100%"></div>
         </div>
+    
+-->
+
       </div>
     </div>
 
@@ -327,12 +358,23 @@
     <div class="col-sm-6">
 
       <div class="form-group">
+
+<!--
+
         <div class="account-help-icon">
           <img src="images/helpicon.svg" class="help-icon" />
           <p class="account-help-text" translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Mist & Geth so you can easily import it in the future. It is the recommended file to download and back up.</p>
           <h4 translate="x_Keystore">Keystore/JSON File (Recommended • Encrypted • Mist/Geth Format)</h4>
         </div>
+
+-->
+
+<!--
+
         <a class="btn btn-primary btn-block" href="{{blobEnc}}" download="{{encFileName}}" translate="x_Download"> DOWNLOAD </a>
+
+-->
+
       </div>
 
       <div class="form-group">
@@ -345,12 +387,18 @@
       </div>
 
       <div class="form-group">
+
+<!--
+
         <div class="account-help-icon">
           <img src="images/helpicon.svg" class="help-icon" />
           <p class="account-help-text" translate="x_JsonDesc">This is the unencrypted, JSON format of your private key. This means you do not need the password but anyone who finds your JSON can access your wallet & Ether without the password.</p>
           <h4 translate="x_Json">JSON File (Unencrypted)</h4>
         </div>
         <a class="btn btn-info btn-block" href="{{blob}}" download="{{wallet.getChecksumAddressString()}}-unencrypted.json" translate="x_Download">DOWNLOAD</a>
+    
+-->
+
       </div>
 
       <!-- TODO: FIX
@@ -392,10 +440,14 @@
       </ul>
       -->
 
+<!--
+
       <div translate="sidebar_TransHistory">See Transaction History:</div>
       <ul class="account-info">
         <li><a href="https://etherscan.io/address/{{wallet.getAddressString()}}" target="_blank">https://etherscan.io/address/{{wallet.getAddressString()}}</a></li>
       </ul>
+
+-->
 
     </div>
   </section>
@@ -496,7 +548,12 @@
 
 
     <section class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.addWallet.id" ng-controller='addWalletCtrl'  ng-cloak>
+
+<!--
+
   <h2 translate="NAV_AddWallet"> Add Wallet </h2>
+
+-->
 
   <section class="row" id="walletselection">
 
@@ -508,30 +565,47 @@
           <span translate="ADD_Radio_1">Generate New Wallet</span>
         </label>
       </div>
+
+<!--
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="fileupload">
           <span translate="ADD_Radio_2">Select Your Wallet File (Keystore/JSON)</span>
         </label>
       </div>
+    
+-->
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="pasteprivkey">
           <span translate="ADD_Radio_3">Paste/Type Your Private Key</span>
         </label>
       </div>
+
+<!--
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="pastemnemonic">
           <span translate="ADD_Radio_5">Paste/Type Your Mnemonic</span>
         </label>
       </div>
+
+-->
+
+<!--
+
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="watchonlyaccount">
           <span translate="ADD_Radio_4">Add an Account to Watch</span>
         </label>
       </div>
+
+-->
+
     </article>
 
     <article class="col-md-4 col-sm-6">
@@ -760,11 +834,17 @@
       <ul class="account-info" ng-show="ajaxReq.type != 'CUS'">
         <li><a href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}" target="_blank">{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}</a></li>
       </ul>
+
+<!--
+
       <div class="well">
         <p translate="sidebar_donation"> MyEtherWallet is a free, open-source service dedicated to your privacy and security. The more donations we receive, the more time we spend creating new features, listening to your feedback, and giving you what you want. We are just two people trying to change the world. Help us?</p>
         <a class="btn btn-primary btn-block" ng-click="onDonateClick()" translate="sidebar_donate">DONATE</a>
         <div class="text-success text-center marg-v-sm" ng-show="tx.donate" translate="sidebar_thanks"> THANK YOU!!! </div>
       </div>
+
+-->
+
     </div>
     <!-- / Sidebar -->
 
@@ -1567,11 +1647,15 @@
         <li translate="HELP_2a_Desc_2"> Save the address. You can keep it to yourself or share it with others. That way, others can transfer ETH to you. </li>
         <li translate="HELP_2a_Desc_3"> Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys: </li>
 
+<!--
+
         <ul>
           <li><strong translate="x_Keystore">Keystore/JSON File (Recommended · Encrypted · Mist/Geth Format):</strong> <span translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Mist & Geth so you can easily import it in the future. It is the recommended file to download and back up.</span></li>
           <li><strong translate="x_Json">JSON File (unencrypted):</strong> <span translate="x_JsonDesc">This is the unencrypted, JSON format of your private key. This means you do not need the password but anyone who finds your JSON can access your wallet & Ether without the password.</span></li>
           <li><strong translate="x_PrivKey">Private Key (unencrypted):</strong> <span translate="x_PrivKeyDesc">This is the unencrypted text version of your private key, meaning no password is necessary. If someone were to find your unencrypted private key, they could access your wallet without a password. For this reason, encrypted versions are typically recommended.</span></li>
         </ul>
+
+-->
 
         <li translate="HELP_2a_Desc_4"> Place your address, versions of the private key, and the PDF version of your paper wallet in a folder. Save this on your computer and a USB drive.</li>
         <li translate="HELP_2a_Desc_5"> Print the wallet if you have a printer. Otherwise, write down your private and address on a piece of paper. Store this as a secure location, separate from your computer and the USB drive.</li>
@@ -2147,15 +2231,15 @@
         </div>
         <div class="modal-body">
          
-          <p><strong>Sempre faça um backup de suas chaves: </strong> a Carteira de Fils da Aerolito não é uma carteira salva na nuvem. Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador. Se você perder sua chave privada ou senha, não há maneira de recuperar acesso à sua carteira. Faça um backup de sua chave privada em múltiplos locais físicos, não apenas no seu computador!</p>
+          <p><strong>Sempre faça um backup de suas chaves: </strong> a  Aerolito não é uma carteira salva na nuvem. Suas carteiras e respectivas chaves privadas são armazenadas localmente no seu computador. Se você perder sua chave privada ou senha, não há maneira de recuperar acesso à sua carteira. Faça um backup de sua chave privada em múltiplos locais físicos, não apenas no seu computador!</p>
 
-          <p><strong>Não somos responsáveis por perdas: </strong> a Carteira de Fils da Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.</p>
+          <p><strong>Não somos responsáveis por perdas: </strong> a  Aerolito, assim como algumas das bibliotecas de Javascript utilizadas estão em fase de desenvolvimento. Mesmo passando por etapas de testes, e além de existir dezenas de milhares de carteiras de criptomoedas desenvolvidas com sucesso, sempre há a possibilidade de ocorrer algo inesperado. Por favor não invista mais do que vocês está disposto a perder, e mesmo assim tenha cuidado. Se algo ocorrer com seus fundos, pedimos desculpas, porém a Aerolito não é responsável pela perda de quaisquer fundos dispostos na carteira.</p>
 
            <p><strong> Agradecimentos: </strong> agradecemos à comunidade de desenvolvedores de software relacionados à criptomoedas por todo o suporte e distribuição do conhecimento necessárias para a realização deste projeto. Um agradecimento especial aos desenvolvedores da carteira MyEtherWallet, por seus esforços em criar e distribuir uma carteira de criptomoedas para a plataforma Ethereum, sob a licença de código-aberto.
  
           <p><strong> This chrome extension is based on the open-source project MyEtherWallet, therefore this non-profit project is distributed under the same license. </strong> <p>
 
-          <p><strong>MIT License</strong> Copyright (c) 2016 Carteira de Fils da Aerolito</p>
+          <p><strong>MIT License</strong> Copyright (c) 2017 Carteira Aerolito</p>
 
           <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
