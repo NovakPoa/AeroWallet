@@ -2370,7 +2370,7 @@ globalFuncs.getBlockie = function (address) {
 };
 globalFuncs.printPaperWallets = function (strJson) {
 	var win = window.open("about:blank", "_blank");
-	var data = "<html><head><link rel=\"stylesheet\" href=\"css\/etherwallet-master.min.css\"\/><script type=\"text\/javascript\" src=\"js\/jquery-1.12.3.min.js\"><\/script><script type=\"text\/javascript\" src=\"js\/etherwallet-static.min.js\"><\/script><script type=\"text\/javascript\">function generateWallets(){ var json = JSON.parse($(\"#printwalletjson\").html()); for(var i=0;i<json.length;i++){ var walletTemplate = $(\'<div\/>\').append($(\"#print-container\").clone()); new QRCode($(walletTemplate).find(\"#paperwalletaddqr\")[0], {\t\t  text: json[i][\'address\'],\t\t  colorDark: \"#000000\",\t\t  colorLight: \"#ffffff\",\t\tcorrectLevel: QRCode.CorrectLevel.H\t   });       new QRCode($(walletTemplate).find(\"#paperwalletprivqr\")[0], {\t\t  text: json[i][\'private\'],\t\t  colorDark: \"#000000\",\t\t  colorLight: \"#ffffff\",\t\tcorrectLevel: QRCode.CorrectLevel.H\t }); $(walletTemplate).find(\"#paperwalletadd\").html(json[i][\'address\']);$(walletTemplate).find(\"#paperwalletpriv\").html(json[i][\'private\']); walletTemplate = $(walletTemplate).find(\"#print-container\").show();$(\"body\").append(walletTemplate); } setTimeout(function(){window.print();},2000);}<\/script><\/head><body><span id=\"printwalletjson\" style=\"display: none;\">{{WALLETJSON}}<\/span><div class=\"print-container\" style=\"display: none; margin-bottom: 50px;\" id=\"print-container\"><img src=\"images\/logo-1.png\" class=\"ether-logo-1\" height=\"100%\" width=\"auto\"\/><img src=\"images\/logo-2.png\" class=\"ether-logo-2\"\/> <img src=\"images\/ether-title.png\" height=\"100%\" width=\"auto\" class=\"print-title\"\/><div class=\"print-qr-code-1\"> <div id=\"paperwalletaddqr\"><\/div> <p class=\"print-text\" style=\"padding-top: 25px;\">YOUR ADDRESS<\/p><\/div><div class=\"print-notes\"><img src=\"images\/notes-bg.png\" width=\"90%;\" height=\"auto\" class=\"pull-left\" \/><p class=\"print-text\">AMOUNT \/ NOTES<\/p><\/div><div class=\"print-qr-code-2\"> <div id=\"paperwalletprivqr\"><\/div> <p class=\"print-text\" style=\"padding-top: 30px;\">YOUR PRIVATE KEY<\/p><\/div><div class=\"print-address-container\"><p><strong>Your Address:<\/strong><br \/><span id=\"paperwalletadd\"><\/span><\/p><p><strong>Your Private Key:<\/strong><br \/><span id=\"paperwalletpriv\"><\/span><\/p><\/div><\/div><\/body><\/html>";
+	var data = "<html><head><link rel=\"stylesheet\" href=\"css\/etherwallet-master.min.css\"\/><script type=\"text\/javascript\" src=\"js\/jquery-1.12.3.min.js\"><\/script><script type=\"text\/javascript\" src=\"js\/etherwallet-static.min.js\"><\/script><script type=\"text\/javascript\">function generateWallets(){ var json = JSON.parse($(\"#printwalletjson\").html()); for(var i=0;i<json.length;i++){ var walletTemplate = $(\'<div\/>\').append($(\"#print-container\").clone()); new QRCode($(walletTemplate).find(\"#paperwalletaddqr\")[0], {\t\t  text: json[i][\'address\'],\t\t  colorDark: \"#000000\",\t\t  colorLight: \"#ffffff\",\t\tcorrectLevel: QRCode.CorrectLevel.H\t   });       new QRCode($(walletTemplate).find(\"#paperwalletprivqr\")[0], {\t\t  text: json[i][\'private\'],\t\t  colorDark: \"#000000\",\t\t  colorLight: \"#ffffff\",\t\tcorrectLevel: QRCode.CorrectLevel.H\t }); $(walletTemplate).find(\"#paperwalletadd\").html(json[i][\'address\']);$(walletTemplate).find(\"#paperwalletpriv\").html(json[i][\'private\']); walletTemplate = $(walletTemplate).find(\"#print-container\").show();$(\"body\").append(walletTemplate); } setTimeout(function(){window.print();},2000);}<\/script><\/head><body><span id=\"printwalletjson\" style=\"display: none;\">{{WALLETJSON}}<\/span><div class=\"print-container\" style=\"display: none; margin-bottom: 50px;\" id=\"print-container\"><img src=\"images\/logo-1.png\" class=\"ether-logo-1\" height=\"100%\" width=\"auto\"\/><img src=\"images\/logo-2.png\" class=\"ether-logo-2\"\/> <img src=\"images\/ether-title.png\" height=\"100%\" width=\"auto\" class=\"print-title\"\/><div class=\"print-qr-code-1\"> <div id=\"paperwalletaddqr\"><\/div> <p class=\"print-text\" style=\"padding-top: 25px;\">SEU ENDEREÇO<\/p><\/div><div class=\"print-notes\"><img src=\"images\/notes-bg.png\" width=\"90%;\" height=\"auto\" class=\"pull-left\" \/><p class=\"print-text\">QUANTIA \/ NOTAS<\/p><\/div><div class=\"print-qr-code-2\"> <div id=\"paperwalletprivqr\"><\/div> <p class=\"print-text\" style=\"padding-top: 30px;\">SUA CHAVE PRIVADA<\/p><\/div><div class=\"print-address-container\"><p><strong>Seu Endereço:<\/strong><br \/><span id=\"paperwalletadd\"><\/span><\/p><p><strong>Sua Chave Privada:<\/strong><br \/><span id=\"paperwalletpriv\"><\/span><\/p><\/div><\/div><\/body><\/html>";
 	data = data.replace("{{WALLETJSON}}", strJson);
 	win.document.write(data);
 	win.document.write("<script>generateWallets();</script>");
@@ -7094,7 +7094,7 @@ en.data = {
   ADD_Ledger_scan: 'Connect to Ledger Nano S',
 
   /* Chrome Extension */
-  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Error Messages */
@@ -7600,7 +7600,7 @@ fi.data = (_fi$data = {
   ADD_Ledger_scan: 'Connect to Ledger Nano S',
 
   /* Chrome Extension */
-  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Geth Error Messages */
@@ -11172,7 +11172,7 @@ pt.data = {
 
   /* Navigation*/
   NAV_YourWallets: 'Suas Carteiras',
-  NAV_AddWallet: 'Adicionar Carteira',
+  NAV_AddWallet: 'Adicionar carteira',
   NAV_GenerateWallet: 'Gerar carteira',
   NAV_BulkGenerate: 'Gerar Bulk',
   NAV_SendEther: 'Enviar Ether & Tokens',
@@ -11182,18 +11182,18 @@ pt.data = {
   NAV_InteractContract: 'Interact with Contract',
   NAV_Contracts: 'Contratos',
   NAV_Multisig: 'Multisig',
-  NAV_MyWallets: 'Minhas Carteiras',
-  NAV_ViewWallet: 'Ver Informação da Carteira',
+  NAV_MyWallets: 'Minhas carteiras',
+  NAV_ViewWallet: 'Ver informação da carteira',
   NAV_Help: 'Ajuda',
   NAV_Contact: 'Contato',
 
   /* General */
-  x_Address: 'Seu Endereço',
+  x_Address: 'Seu endereço:',
   x_AddessDesc: 'Você deve saber sua "Conta #" ou sua "Chave Pública". É o que você enviar para que as pessoas possam enviar-lhe ether. Esse ícone é uma maneira fácil de reconhecer o seu endereço.',
   x_Cancel: 'Cancelar',
   x_CSV: 'Arquivo CSV (não criptografado)',
   x_Download: 'Download',
-  x_Json: 'Arquivo .JSON (Não criptografado)',
+  x_Json: 'Arquivo .JSON (não criptografado)',
   x_JsonDesc: 'Este é um arquivo descriptografado, em formato .JSON da sua chave privada. Isto significa que você não precisará da sua senha, mas qualquer um que encontrar o seu arquivo .JSON pode acessar sua carteira sem a senha.',
   x_Keystore: 'Arquivo de armazenamento de chaves (UTC / JSON · Recomendado · Criptografado)',
   x_Keystore2: 'Arquivo de armazenamento de chaves (UTC / JSON)',
@@ -11203,11 +11203,11 @@ pt.data = {
   x_Print: 'Imprimir Carteira de Papel',
   x_PrintDesc: 'Dica: Clique impressão e salve como PDF, mesmo se você não possui uma impressora!',
   x_PrintShort: 'Imprimir',
-  x_PrivKey: 'Chave Privada (Não criptografado)',
+  x_PrivKey: 'Chave Privada (não criptografada):',
   x_PrivKey2: 'Chave Privada',
   x_PrivKeyDesc: 'Este é um arquivo descriptografado, em formato de texto da sua chave privada. Isto significa que você não precisará da sua senha, mas qualquer um que encontrar o seu arquivo .TXT pode acessar sua carteira sem a senha.',
   x_Save: 'Salvar',
-  x_TXT: 'Arquivo .TXT (Não criptografado)',
+  x_TXT: 'Arquivo .TXT (não criptografado)',
   x_Wallet: 'Carteira',
 
   /* Header */
@@ -11245,9 +11245,9 @@ pt.data = {
   ADD_Radio_2: 'Selecione seu arquivo da Carteira (Keystore / JSON)',
   ADD_Radio_2_alt: 'Selecione seu arquivo da Carteira: ',
   ADD_Radio_2_short: 'SELECIONE O ARQUIVO DA CARTEIRA...',
-  ADD_Radio_3: 'Cole/Digite sua Chave Privada ',
+  ADD_Radio_3: 'Cole/digite sua Chave Privada ',
   ADD_Radio_4: 'Adicionar uma conta para ver',
-  ADD_Radio_5: 'Cole/Digite sua Mnemonic',
+  ADD_Radio_5: 'Cole/digite sua Mnemonic',
   ADD_Label_2: 'Crie um nome:',
   ADD_Label_3: 'Sua carteira é criptografada. Por favor, insira a senha: ',
   ADD_Label_4: 'Adicionar uma conta para ver',
@@ -11273,13 +11273,13 @@ pt.data = {
   BULK_SuccessMsg: 'Sucesso! Suas carteiras foram geradas.',
 
   /* Sending Ether and Tokens */
-  SEND_addr: 'Para o Endereço: ',
+  SEND_addr: 'Para o endereço: ',
   SEND_amount: 'Valor a enviar: ',
   SEND_amount_short: 'Valor',
   SEND_custom: 'Adicionar token personalizado',
   SEND_gas: 'Gás',
   SEND_TransferTotal: 'Enviar o Salto Total',
-  SEND_generate: 'Gerar Transação',
+  SEND_generate: 'Gerar transação',
   SEND_raw: 'Transação Raw',
   SEND_signed: 'Transação Assinada',
   SEND_trans: 'Enviar Transação',
@@ -11304,7 +11304,7 @@ pt.data = {
   TRANS_warning: 'Se você estiver usando somente "ETH" ou "ETC" Funções que você está enviando através de um contrato. Alguns serviços têm problemas para aceitar essas transações. Leia mais.',
   TRANS_advanced: '+Avançado: Adicionar dados ',
   TRANS_data: ' Dados: ',
-  TRANS_gas: 'Gás Limit: ',
+  TRANS_gas: 'Limite de Gas: ',
   TRANS_sendInfo: 'Uma transação padrão usando 21000 gás irá custar 0.000441 ETH. Nós usamos um preço ligeiramente acima do mínima de gás de 0,000000021 ETH para garantir que ele seja minado rapidamente. Nós não recebemos nenhuma taxa de transação.',
 
   /* Send Transaction Modals */
@@ -11353,19 +11353,19 @@ pt.data = {
   MYWAL_Edit: 'Editar',
   MYWAL_View: 'Ver',
   MYWAL_Remove: 'Remover',
-  MYWAL_RemoveWal: 'Remover Carteira:',
+  MYWAL_RemoveWal: 'Remover carteira:',
   MYWAL_WatchOnly: 'Suas contas somente de exibição',
-  MYWAL_Viewing: 'Exibindo Carteira: ',
+  MYWAL_Viewing: 'Exibindo carteira: ',
   MYWAL_Hide: 'Esconder Info da Carteira',
-  MYWAL_Edit_2: 'Editar Carteira: ',
-  MYWAL_Name: 'Nome da Carteira',
+  MYWAL_Edit_2: 'Editar carteira: ',
+  MYWAL_Name: 'Nome da carteira',
   MYWAL_Content_1: 'Cuidado! Você está prestes a remover sua carteira: ',
   MYWAL_Content_2: 'Certifique-se de que **salvou a chave privada e / ou o Arquivo do Keystore e a senha** antes de removê-la.',
   MYWAL_Content_3: 'Se pretender utilizar esta carteira com o MyEtherWallet CX no futuro, terá de voltar a adicioná-la manualmente utilizando a chave privada/JSON e a palavra-passe.',
 
   /* View Wallet Details */
-  VIEWWALLET_Subtitle: 'This allows you to download different versions of private keys and re-print your paper wallet. You may want to do this in order to [import your account into Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). If you want to check your balance, we recommend using a blockchain explorer like [etherscan.io](http://etherscan.io/).',
-  VIEWWALLET_Subtitle_Short: 'This allows you to download different versions of private keys and re-print your paper wallet. ',
+  VIEWWALLET_Subtitle: 'Isto permite que você baixe diferentes versões de sua Chave Privada e imprima sua carteira em um papel. Você pode querer fazer isto para [importar sua carteira no Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/). Se você quiser verificar seu saldo, nós recomendamos utilizar um explorador de blockchain como o [etherscan.io](http://etherscan.io/).',
+  VIEWWALLET_Subtitle_Short: 'Isto permite que você baixe diferentes versões de sua Chave Privada e imprima sua carteira em um papel. ',
   VIEWWALLET_SuccessMsg: 'Success! Here are your wallet details.',
 
   /* Mnemonic Additions */
@@ -11382,58 +11382,58 @@ pt.data = {
   ADD_Ledger_scan: 'Conectar-se a Ledger Wallet',
 
   /* Chrome Extension */
-  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar Carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
+  CX_error_1: 'Você não tem nenhuma carteira salva ainda. Clique em ["Adicionar carteira"](/cx-wallet.html#add-wallet) para adicionar uma!',
   CX_quicksend: 'QuickSend', // if no appropriate translation, just use "Send"
 
   /* Error Messages */
-  ERROR_1: 'Please enter valid amount.',
-  ERROR_2: 'Your password must be at least 9 characters. Please ensure it is a strong password. ',
-  ERROR_3: 'Sorry! We don\'t recognize this type of wallet file. ',
-  ERROR_4: 'This is not a valid wallet file. ',
-  ERROR_5: 'This unit doesn\'t exists, please use the one of the following units ',
-  ERROR_6: 'Invalid address. ',
-  ERROR_7: 'Invalid password. ',
-  ERROR_8: 'Invalid amount. ',
-  ERROR_9: 'Invalid gas limit. ',
-  ERROR_10: 'Invalid data value. ',
-  ERROR_11: 'Invalid gas amount. ',
-  ERROR_12: 'Invalid nonce. ',
-  ERROR_13: 'Invalid signed transaction. ',
-  ERROR_14: 'A wallet with this nickname already exists. ',
-  ERROR_15: 'Wallet not found. ',
-  ERROR_16: 'It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal. ',
-  ERROR_17: 'A wallet with this address already exists in storage. Please check your wallets page. ',
-  ERROR_18: 'You need to have at least 0.001 ETH in your account to cover the cost of gas. Please add some ETH and try again. ',
-  ERROR_19: 'All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.',
-  ERROR_20: 'Invalid symbol',
-  ERROR_21: 'Não é um token ERC-20 válido',
+  ERROR_1: 'Por favor, entre uma quantia válida.',
+  ERROR_2: 'Sua senha deve possuir no mínimo 9 caracteres. Por favor, assegure que sua senha seja forte. ',
+  ERROR_3: 'Desculpe, mas não reconhecemos este formato de arquivo. ',
+  ERROR_4: 'Esse formato de carteira não é válido. ',
+  ERROR_5: 'Essa unidade não existe, por favor utilize uma das unidades a seguir ',
+  ERROR_6: 'Endereço inválido. ',
+  ERROR_7: 'Senha inválida. ',
+  ERROR_8: 'Quantia inválida. ',
+  ERROR_9: 'Limite de Gas inválido. ',
+  ERROR_10: 'Valores inválidos. ',
+  ERROR_11: 'Quantia de Gas inválida. ',
+  ERROR_12: 'Nonce inválido. ',
+  ERROR_13: 'Transação assinada inválida. ',
+  ERROR_14: 'Uma carteira com esse nome já existe. ',
+  ERROR_15: 'Carteira não encontrada. ',
+  ERROR_16: 'Não existe uma proposta com essa ID, ou houve um erro lendo esta proposta. ',
+  ERROR_17: 'Uma carteira com este endereço já existe no cache. Por favor, verifique sua página de carteiras. ',
+  ERROR_18: 'Você precisa de no mínimo 0.001 ETH na sua conta para cobrir os gastos de Gas. Por favor, adicione um pouco de ETH e tente novamente. ',
+  ERROR_19: 'Todo o Gas será utilizado nessa transação. Isso significa que você já votou nessa porposta ou o período de debate já acabou.',
+  ERROR_20: 'Símbolo inválido.',
+  ERROR_21: 'Não é um token ERC-20 válido.',
   ERROR_22: 'Não foi possível estimar o gás. Não há fundos suficientes na conta, ou o endereço do contrato de recebimento iria lançar um erro. Sinta-se livre para definir manualmente o gás e prossiga. A mensagem de erro ao enviar pode ser mais informativa.',
-  SUCCESS_1: 'Valid address',
-  SUCCESS_2: 'Wallet successfully decrypted',
-  SUCCESS_3: 'Transaction submitted. TX ID: ',
+  SUCCESS_1: 'Endereço válido',
+  SUCCESS_2: 'Carteira descriptografada com sucesso',
+  SUCCESS_3: 'Transação submetida. ID da TX: ',
   SUCCESS_4: 'Sua carteira foi criada com sucesso: ',
-  SUCCESS_5: 'File Selected: ',
+  SUCCESS_5: 'Arquivo selecionado: ',
 
   /* Geth Error Messages */
-  GETH_InvalidSender: 'Invalid sender',
-  GETH_Nonce: 'Nonce too low',
-  GETH_Cheap: 'Gas price too low for acceptance',
-  GETH_Balance: 'Insufficient balance',
-  GETH_NonExistentAccount: 'Account does not exist or account balance too low',
-  GETH_InsufficientFunds: 'Insufficient funds for gas * price + value',
-  GETH_IntrinsicGas: 'Intrinsic gas too low',
-  GETH_GasLimit: 'Exceeds block gas limit',
-  GETH_NegativeValue: 'Negative value',
+  GETH_InvalidSender: 'Destinatário inválido',
+  GETH_Nonce: 'Quantia de Nonce muito baixa',
+  GETH_Cheap: 'Preço do Gas muito baixo',
+  GETH_Balance: 'Saldo insuficiente',
+  GETH_NonExistentAccount: 'Conta não existente ou saldo muito pequeno',
+  GETH_InsufficientFunds: 'Fundos insuficientes para Gas * preço + valor',
+  GETH_IntrinsicGas: 'Gas intrínseco muito baixo',
+  GETH_GasLimit: 'Excede o limite de Gas do bloco',
+  GETH_NegativeValue: 'Valor negativo',
 
   /* Parity Error Messages */
-  PARITY_AlreadyImported: "Transaction with the same hash was already imported.",
-  PARITY_Old: "Transaction nonce is too low. Try incrementing the nonce.",
-  PARITY_TooCheapToReplace: "Transaction fee is too low. There is another transaction with same nonce in the queue. Try increasing the fee or incrementing the nonce.",
-  PARITY_LimitReached: "There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the fee.",
-  PARITY_InsufficientGasPrice: "Transaction fee is too low. It does not satisfy your node's minimal fee (minimal: {}, got: {}). Try increasing the fee.",
-  PARITY_InsufficientBalance: "Insufficient funds. Account you try to send transaction from does not have enough funds. Required {} and got: {}.",
-  PARITY_GasLimitExceeded: "Transaction cost exceeds current gas limit. Limit: {}, got: {}. Try decreasing supplied gas.",
-  PARITY_InvalidGasLimit: "Supplied gas is beyond limit.",
+  PARITY_AlreadyImported: "Uma transação com a mesma hash já foi importada.",
+  PARITY_Old: "Nonce da transação baixo demais. Tente incrementar o Nonce.",
+  PARITY_TooCheapToReplace: "Fee da transação muito baixo. Há outra transação com o mesmo Nonce em fila. Tente aumentar o fee ou incrementar o Nonce.",
+  PARITY_LimitReached: "Existem transações demais em fila. Sua transação foi impedida devido ao limite. Tente aumentar o fee.",
+  PARITY_InsufficientGasPrice: "Fee da transação muito baixo. Não satisfaz o fee mínimo da sua node (minimal: {}, got: {}). Tente aumentar o fee.",
+  PARITY_InsufficientBalance: "Fundos insuficientes. A conta da qual você está enviando não tem fundos suficientes. Requer {} e possui: {}.",
+  PARITY_GasLimitExceeded: "O custo da transação excede o limite de Gas atual. Limite: {}, possui: {}. Tente diminuir o Gas.",
+  PARITY_InvalidGasLimit: "Gas está acima do limite.",
 
   /* Tranlsation Info */
   translate_version: '0.3',
@@ -51860,7 +51860,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         // The exponent value at and beneath which toString returns exponential notation.
         // Number type: -7
-        TO_EXP_NEG = -7,
+        TO_EXP_NEG = -14,
             // 0 to -MAX
 
         // The exponent value at and above which toString returns exponential notation.
