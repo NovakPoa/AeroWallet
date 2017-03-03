@@ -3333,7 +3333,14 @@ nodes.nodeList = {
         'abiList': require('./abiDefinitions/ethAbi.json'),
         'estimateGas': true,
         'service': 'MyEtherWallet',
+        'lib': new nodes.customNode('https://api.myetherapi.com/eth', '')
+
+
+
+        /*
         'lib': require('./nodeHelpers/mewEth')
+        */
+
     },
     'etc_mew': {
         'name': 'ETC',
